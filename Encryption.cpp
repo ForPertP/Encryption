@@ -1,5 +1,11 @@
 #include <bits/stdc++.h>
 
+
+#include <iostream>
+#include <numeric>
+#include <string_view>
+#include <vector>
+
 using namespace std;
 
 /*
@@ -13,6 +19,7 @@ string encryption(string s)
 {
     std::string result{};
     s.erase(std::remove(s.begin(), s.end(), ' '), s.end());
+    //std::erase(s, ' ');
     
     size_t L = s.size();
 
