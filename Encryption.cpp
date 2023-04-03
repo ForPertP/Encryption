@@ -13,6 +13,7 @@ string encryption(string s)
 {
     std::string result{};
     s.erase(std::remove(s.begin(), s.end(), ' '), s.end());
+    
     size_t L = s.size();
 
     size_t col = (size_t)std::ceil(std::sqrt(L));
@@ -29,6 +30,7 @@ string encryption(string s)
 
     return result;
 }
+
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
